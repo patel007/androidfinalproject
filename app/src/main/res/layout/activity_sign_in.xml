@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayoutsignIn"
+    android:focusable="false"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagesignInBackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop"
+        android:background="@drawable/black">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayoutsignInInfo"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_rounded_corners">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginTop="0dp"
+            android:id="@+id/textUsername"
+            android:layout_centerHorizontal="true"
+            android:hint="User Name"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/textPassword"
+            android:hint="Password"
+            android:typeface="sans"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/textUsername"
+            android:layout_alignLeft="@+id/textUsername"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayoutsignInButtons"
+        android:layout_below="@+id/relLayoutsignInInfo"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_rounded_corners">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="Cancel"
+            android:clickable="true"
+            android:id="@+id/buttonCancel"
+            android:background="@drawable/white_rounded_corners"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="Log In"
+            android:clickable="true"
+            android:id="@+id/buttonsignIn"
+            android:background="@drawable/white_rounded_corners"
+            android:layout_toRightOf="@+id/buttonCancel"
+            android:textColor="@android:color/holo_blue_dark"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forget"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:layout_marginTop="60dp"
+            android:text="Forget Password ??"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

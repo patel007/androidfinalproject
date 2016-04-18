@@ -19,104 +19,106 @@
         android:scaleType="centerCrop"
         android:id="@+id/relLayoutSignUpInfo"
         android:background="@drawable/white_rounded_corners"
-        android:src="@drawable/black" />
+        android:src="@drawable/black"
+        android:contentDescription="@string/image" />
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/fname"
             android:layout_alignTop="@+id/relLayoutSignUpInfo"
             android:layout_alignParentStart="true"
-            android:hint="First Name"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/lname"
-            android:layout_below="@+id/fname"
-            android:layout_alignParentStart="true"
-            android:hint="Last Name"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/mail"
-            android:layout_below="@+id/lname"
-            android:layout_alignParentStart="true"
-            android:hint="E-Mail"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/pass"
-            android:layout_below="@+id/mail"
-            android:layout_alignParentStart="true"
-            android:hint="Password"/>
-
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/add1"
-            android:layout_below="@+id/pass"
-            android:layout_alignParentStart="true"
-            android:hint="Address Line 1"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/add2"
-            android:layout_below="@+id/add1"
-            android:layout_alignParentStart="true"
-            android:hint="Address Line 2"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/city"
-            android:layout_below="@+id/add2"
-            android:layout_alignParentStart="true"
-            android:hint="City"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/province"
-            android:layout_below="@+id/city"
-            android:layout_alignParentStart="true"
-            android:hint="Province"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/country"
-            android:layout_below="@+id/city"
-            android:layout_alignParentStart="true"
-            android:hint="Country"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/code"
-            android:layout_below="@+id/country"
-            android:layout_alignParentStart="true"
-            android:hint="PostalCode"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Submit"
-            android:id="@+id/submit"
-            android:layout_alignBottom="@+id/country"
-            android:layout_centerHorizontal="true"
+            android:hint="First Name"
             android:textColor="@android:color/holo_blue_dark"/>
-    </ScrollView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lname"
+        android:layout_below="@+id/fname"
+        android:layout_alignParentStart="true"
+        android:hint="Last Name"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail"
+        android:layout_below="@+id/lname"
+        android:layout_alignParentStart="true"
+        android:hint="E-Mail"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass"
+        android:layout_below="@+id/mail"
+        android:layout_alignParentStart="true"
+        android:hint="Password"/>
 
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add1"
+        android:layout_below="@+id/pass"
+        android:layout_alignParentStart="true"
+        android:hint="Address Line 1"
+        android:textColor="@android:color/holo_blue_dark"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add2"
+        android:layout_below="@+id/add1"
+        android:layout_alignParentStart="true"
+        android:hint="Address Line 2"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/city"
+        android:layout_below="@+id/add2"
+        android:layout_alignParentStart="true"
+        android:hint="City"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/province"
+        android:layout_below="@+id/city"
+        android:layout_alignParentStart="true"
+        android:hint="Province"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/country"
+        android:layout_below="@+id/province"
+        android:layout_alignParentStart="true"
+        android:hint="Country"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/code"
+        android:layout_below="@+id/country"
+        android:layout_alignParentStart="true"
+        android:hint="PostalCode"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@+id/code"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

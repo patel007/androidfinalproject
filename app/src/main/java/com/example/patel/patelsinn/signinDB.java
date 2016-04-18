@@ -15,18 +15,21 @@ public class signinDB extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "signin.db";
-    private static final String TABLE_PRODUCTS = "signins";
+    private static final String TABLE_SIGNINS = "signins";
 
-    public static String username = "_username";
+    public static String username = "username";
     public static String password = "password";
 
-    public signinDB(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+    public signinDB(Context context) {
+        super(context, DATABASE_NAME, null,1);
     }
-
     @Override
     public void onCreate(SQLiteDatabase db) {
-
+        String CREATE_SIGNINS_TABLE = "CREATE TABLE " +
+                TABLE_SIGNINS + "("
+                + username + " TEXT PRIMARY KEY," + password
+                + " TEXT" + ")";
+        db.execSQL(CREATE_SIGNINS_TABLE);
     }
 
     @Override
@@ -34,4 +37,6 @@ public class signinDB extends SQLiteOpenHelper {
                           int newVersion) {
 
     }
+
+
 }

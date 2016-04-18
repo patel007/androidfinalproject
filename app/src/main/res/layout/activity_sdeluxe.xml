@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SUPER DELUXE ROOMS"
-        android:id="@+id/deluxe"
+        android:id="@+id/sdeluxe"
         android:textSize="30sp"
         android:layout_marginTop="50dp"
         android:layout_gravity="center_horizontal"

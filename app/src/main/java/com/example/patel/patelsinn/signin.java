@@ -1,5 +1,7 @@
 package com.example.patel.patelsinn;
 
+import android.widget.EditText;
+
 /**
  * Created by patel on 2016-04-17.
  */
